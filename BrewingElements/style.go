@@ -1,4 +1,4 @@
-package main
+package elements
 
 type Style struct {
 	Name           string  `xml:"NAME" json:"NAME"`

@@ -1,4 +1,4 @@
-package main
+package elements
 
 type Yeast struct {
 	Name           string  `xml:"NAME" json:"NAME"`

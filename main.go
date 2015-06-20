@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/skiesel/brewing-database/BrewingElements"
 	"io/ioutil"
 )
 
@@ -16,7 +17,7 @@ func test() {
 		if err != nil {
 			panic(err)
 		}
-		parse(file)
+		elements.Parse(file)
 	}
 }
 

@@ -1,4 +1,4 @@
-package main
+package elements
 
 import (
 	"code.google.com/p/go-charset/charset"
@@ -46,7 +46,7 @@ type StyleList struct {
 	Styles []Style `xml:"STYLE" json:"STYLE"`
 }
 
-func parse(beerXML []byte) {
+func Parse(beerXML []byte) {
 	peek := string(beerXML[:256])
 
 	reader := bytes.NewReader(beerXML)

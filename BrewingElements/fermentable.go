@@ -1,4 +1,4 @@
-package main
+package elements
 
 type Fermentable struct {
 	Name           string  `xml:"NAME" json:"NAME"`
