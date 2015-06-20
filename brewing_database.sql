@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 20, 2015 at 09:27 AM
+-- Generation Time: Jun 20, 2015 at 10:38 AM
 -- Server version: 5.5.42-37.1-log
 -- PHP Version: 5.4.23
 
@@ -59,16 +59,16 @@ CREATE TABLE IF NOT EXISTS `Equipment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `EqupimentLookup`
+-- Table structure for table `EquipmentLookup`
 --
 
-DROP TABLE IF EXISTS `EqupimentLookup`;
-CREATE TABLE IF NOT EXISTS `EqupimentLookup` (
+DROP TABLE IF EXISTS `EquipmentLookup`;
+CREATE TABLE IF NOT EXISTS `EquipmentLookup` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `RecipeID` int(11) NOT NULL,
   `EquipmentID` int(11) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -174,7 +174,7 @@ DROP TABLE IF EXISTS `MashProfile`;
 CREATE TABLE IF NOT EXISTS `MashProfile` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `ParentID` int(11) NOT NULL DEFAULT '-1',
-  `Name` int(11) NOT NULL,
+  `Name` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Version` int(11) NOT NULL DEFAULT '1',
   `GrainTemp` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Notes` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -189,7 +189,15 @@ CREATE TABLE IF NOT EXISTS `MashProfile` (
   `DisplaySpargeTemp` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `DisplayTunWeight` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `MashProfile`
+--
+
+INSERT INTO `MashProfile` (`ID`, `ParentID`, `Name`, `Version`, `GrainTemp`, `Notes`, `TunTemp`, `SpargeTemp`, `PH`, `TunWeight`, `TunSpecificHeat`, `EquipAdjust`, `DisplayGrainTemp`, `DisplayTunTemp`, `DisplaySpargeTemp`, `DisplayTunWeight`) VALUES
+(1, -1, 'Profile1', 1, '', '', '0.000000', '0.000000', '0.000000', '0.000000', '0.000000', 0, '', '', '', ''),
+(2, -1, 'Profile2', 1, '', '', '0.000000', '0.000000', '0.000000', '0.000000', '0.000000', 0, '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -230,7 +238,15 @@ CREATE TABLE IF NOT EXISTS `MashStep` (
   `DisplayStepTemp` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `DisplayInfuseAmt` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `MashStep`
+--
+
+INSERT INTO `MashStep` (`ID`, `ParentID`, `Name`, `Version`, `Type`, `InfuseAmount`, `StepTemp`, `StepTime`, `RampTime`, `EndTemp`, `Description`, `WaterGrainRatio`, `DecoctionAmt`, `InfuseTemp`, `DisplayStepTemp`, `DisplayInfuseAmt`) VALUES
+(1, -1, 'Step1', 1, '', '0.000000', '0.000000', '0.000000', '0.000000', '0.000000', '', '', '', '', '', ''),
+(2, -1, 'Step2', 1, '', '0.000000', '0.000000', '0.000000', '0.000000', '0.000000', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -244,7 +260,15 @@ CREATE TABLE IF NOT EXISTS `MashStepLookup` (
   `MashProfileID` int(11) NOT NULL,
   `MashStepId` int(11) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `MashStepLookup`
+--
+
+INSERT INTO `MashStepLookup` (`ID`, `MashProfileID`, `MashStepId`) VALUES
+(1, 1, 1),
+(2, 1, 2);
 
 -- --------------------------------------------------------
 
