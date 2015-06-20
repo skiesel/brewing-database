@@ -45,11 +45,11 @@ type Recipe struct {
 	EstOG                string  `xml:"EST_OG" json:"EST_OG"`
 	EstFg                string  `xml:"EST_FG" json:"EST_FG"`
 	EstColor             string  `xml:"EST_COLOR" json:"EST_COLOR"`
-	IBU                  float64 `xml:"IBU" json:"IBU"`
+	IBU                  string `xml:"IBU" json:"IBU"`
 	IBUMethod            string  `xml:"IBU_METHOD" json:"IBU_METHOD"`
-	EstABV               float64 `xml:"EST_ABV" json:"EST_ABV"`
-	ABV                  float64 `xml:"ABV" json:"ABV"`
-	ActualEfficiency     float64 `xml:"ACTUAL_EFFICIENCY" json:"ACTUAL_EFFICIENCY"`
+	EstABV               string `xml:"EST_ABV" json:"EST_ABV"`
+	ABV                  string `xml:"ABV" json:"ABV"`
+	ActualEfficiency     string `xml:"ACTUAL_EFFICIENCY" json:"ACTUAL_EFFICIENCY"`
 	Calories             string  `xml:"CALORIES" json:"CALORIES"`
 	DisplayBatchSize     string  `xml:"DISPLAY_BATCH_SIZE" json:"DISPLAY_BATCH_SIZE"`
 	DisplayBoilSize      string  `xml:"DISPLAY_BOIL_SIZE" json:"DISPLAY_BOIL_SIZE"`
