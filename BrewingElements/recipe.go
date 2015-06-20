@@ -42,23 +42,23 @@ type Recipe struct {
 
 	/* Extensions */
 
-	EstOG                string  `xml:"EST_OG" json:"EST_OG"`
-	EstFg                string  `xml:"EST_FG" json:"EST_FG"`
-	EstColor             string  `xml:"EST_COLOR" json:"EST_COLOR"`
+	EstOG                string `xml:"EST_OG" json:"EST_OG"`
+	EstFg                string `xml:"EST_FG" json:"EST_FG"`
+	EstColor             string `xml:"EST_COLOR" json:"EST_COLOR"`
 	IBU                  string `xml:"IBU" json:"IBU"`
-	IBUMethod            string  `xml:"IBU_METHOD" json:"IBU_METHOD"`
+	IBUMethod            string `xml:"IBU_METHOD" json:"IBU_METHOD"`
 	EstABV               string `xml:"EST_ABV" json:"EST_ABV"`
 	ABV                  string `xml:"ABV" json:"ABV"`
 	ActualEfficiency     string `xml:"ACTUAL_EFFICIENCY" json:"ACTUAL_EFFICIENCY"`
-	Calories             string  `xml:"CALORIES" json:"CALORIES"`
-	DisplayBatchSize     string  `xml:"DISPLAY_BATCH_SIZE" json:"DISPLAY_BATCH_SIZE"`
-	DisplayBoilSize      string  `xml:"DISPLAY_BOIL_SIZE" json:"DISPLAY_BOIL_SIZE"`
-	DisplayOG            string  `xml:"DISPLAY_OG" json:"DISPLAY_OG"`
-	DisplayFG            string  `xml:"DISPLAY_FG" json:"DISPLAY_FG"`
-	DisplayPrimaryTemp   string  `xml:"DISPLAY_PRIMARY_TEMP" json:"DISPLAY_PRIMARY_TEMP"`
-	DisplaySecondaryTemp string  `xml:"DISPLAY_SECONDARY_TEMP" json:"DISPLAY_SECONDARY_TEMP"`
-	DisplayTertiaryTemp  string  `xml:"DISPLAY_TERTIARY_TEMP" json:"DISPLAY_TERTIARY_TEMP"`
-	DisplayAgeTemp       string  `xml:"DISPLAY_AGE_TEMP" json:"DISPLAY_AGE_TEMP"`
-	CarbonationUsed      string  `xml:"CARBONATION_USED" json:"CARBONATION_USED"`
-	DisplayCarbTemp      string  `xml:"DISPLAY_CARB_TEMP" json:"DISPLAY_CARB_TEMP"`
+	Calories             string `xml:"CALORIES" json:"CALORIES"`
+	DisplayBatchSize     string `xml:"DISPLAY_BATCH_SIZE" json:"DISPLAY_BATCH_SIZE"`
+	DisplayBoilSize      string `xml:"DISPLAY_BOIL_SIZE" json:"DISPLAY_BOIL_SIZE"`
+	DisplayOG            string `xml:"DISPLAY_OG" json:"DISPLAY_OG"`
+	DisplayFG            string `xml:"DISPLAY_FG" json:"DISPLAY_FG"`
+	DisplayPrimaryTemp   string `xml:"DISPLAY_PRIMARY_TEMP" json:"DISPLAY_PRIMARY_TEMP"`
+	DisplaySecondaryTemp string `xml:"DISPLAY_SECONDARY_TEMP" json:"DISPLAY_SECONDARY_TEMP"`
+	DisplayTertiaryTemp  string `xml:"DISPLAY_TERTIARY_TEMP" json:"DISPLAY_TERTIARY_TEMP"`
+	DisplayAgeTemp       string `xml:"DISPLAY_AGE_TEMP" json:"DISPLAY_AGE_TEMP"`
+	CarbonationUsed      string `xml:"CARBONATION_USED" json:"CARBONATION_USED"`
+	DisplayCarbTemp      string `xml:"DISPLAY_CARB_TEMP" json:"DISPLAY_CARB_TEMP"`
 }

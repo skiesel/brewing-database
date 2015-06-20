@@ -15,7 +15,7 @@ var (
 type dbConfig struct {
 	Username string
 	Password string
-	Server string
+	Server   string
 	Database string
 }
 
@@ -39,7 +39,7 @@ func init() {
 		panic(err)
 	}
 
-	fmt.Println("connected!")	
+	fmt.Println("connected!")
 }
 
 func Connected() bool {

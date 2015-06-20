@@ -12,7 +12,7 @@ type Yeast struct {
 	MinTemperature float64 `xml:"MIN_TEMPERATURE" json:"MIN_TEMPERATURE"`
 	MaxTemperature float64 `xml:"MAX_TEMPERATURE" json:"MAX_TEMPERATURE"`
 	Flocculation   string  `xml:"FLOCCULATION" json:"FLOCCULATION"`
-	Attenuation   float64 `xml:"ATTENUATION" json:"ATTENUATION"`
+	Attenuation    float64 `xml:"ATTENUATION" json:"ATTENUATION"`
 	Notes          string  `xml:"NOTES" json:"NOTES"`
 	BestFor        string  `xml:"BEST_FOR" json:"BEST_FOR"`
 	TimesCultured  int64   `xml:"TIMES_CULTURED" json:"TIMES_CULTURED"`
