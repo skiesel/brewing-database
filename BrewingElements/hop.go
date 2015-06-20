@@ -14,10 +14,10 @@ type Hop struct {
 	Beta          float64 `xml:"BETA" json:"BETA"`
 	HSI           float64 `xml:"HSI" json:"HSI"`
 	Substitutes   string  `xml:"SUBSTITUTES" json:"SUBSTITUTES"`
-	Humulene      string  `xml:"HUMULENE" json:"HUMULENE"`
-	Caryophyllene string  `xml:"CARYOPHYLLENE" json:"CARYOPHYLLENE"`
-	Cohumulone    string  `xml:"COHUMULONE" json:"COHUMULONE"`
-	Myrcene       string  `xml:"MYRCENE" json:"MYRCENE"`
+	Humulene      float64  `xml:"HUMULENE" json:"HUMULENE"`
+	Caryophyllene float64  `xml:"CARYOPHYLLENE" json:"CARYOPHYLLENE"`
+	Cohumulone    float64  `xml:"COHUMULONE" json:"COHUMULONE"`
+	Myrcene       float64  `xml:"MYRCENE" json:"MYRCENE"`
 
 	/* Extensions */
 
