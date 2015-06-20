@@ -17,4 +17,15 @@ type Equipment struct {
 	TopUpKettle     float64 `xml:"TOP_UP_KETTLE" json:"TOP_UP_KETTLE"`
 	HopUtilization  float64 `xml:"HOP_UTILIZATION" json:"HOP_UTILIZATION"`
 	Notes           string  `xml:"NOTES" json:"NOTES"`
+
+	/* Extensions */
+
+	DisplayBoilSize        string `xml:"DISPLAY_BOIL_SIZE" json:"DISPLAY_BOIL_SIZE"`
+	DisplayBatchSize       string `xml:"DISPLAY_BATCH_SIZE" json:"DISPLAY_BATCH_SIZE"`
+	DisplayTunVolume       string `xml:"DISPLAY_TUN_VOLUME" json:"DISPLAY_TUN_VOLUME"`
+	DisplayTunWeight       string `xml:"DISPLAY_TUN_WEIGHT" json:"DISPLAY_TUN_WEIGHT"`
+	DisplayTopUpWater      string `xml:"DISPLAY_TOP_UP_WATER" json:"DISPLAY_TOP_UP_WATER"`
+	DisplayTrubChillerLoss string `xml:"DISPLAY_TRUB_CHILLER_LOSS" json:"DISPLAY_TRUB_CHILLER_LOSS"`
+	DisplayLauterDeadspace string `xml:"DISPLAY_LAUTER_DEADSPACE" json:"DISPLAY_LAUTER_DEADSPACE"`
+	DisplayTopUpKettle     string `xml:"DISPLAY_TOP_UP_KETTLE" json:"DISPLAY_TOP_UP_KETTLE"`
 }

@@ -9,4 +9,13 @@ type MashStep struct {
 	StepTime     float64 `xml:"STEP_TIME" json:"STEP_TIME"`
 	RampTime     float64 `xml:"RAMP_TIME" json:"RAMP_TIME"`
 	EndTemp      float64 `xml:"END_TEMP" json:"END_TEMP"`
+
+	/* Extensions */
+
+	Description      string `xml:"DESCRIPTION" json:"DESCRIPTION"`
+	WaterGrainRatio  string `xml:"WATER_GRAIN_RATIO" json:"WATER_GRAIN_RATIO"`
+	DecoctionAmt     string `xml:"DECOCTION_AMT" json:"DECOCTION_AMT"`
+	InfuseTemp       string `xml:"INFUSE_TEMP" json:"INFUSE_TEMP"`
+	DisplayStepTemp  string `xml:"DISPLAY_STEP_TEMP" json:"DISPLAY_STEP_TEMP"`
+	DisplayInfuseAmt string `xml:"DISPLAY_INFUSE_AMT" json:"DISPLAY_INFUSE_AMT"`
 }

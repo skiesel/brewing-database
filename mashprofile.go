@@ -12,4 +12,11 @@ type MashProfile struct {
 	TunWeight       float64    `xml:"TUN_WEIGHT" json:"TUN_WEIGHT"`
 	TunSpecificHeat float64    `xml:"TUN_SPECIFIC_HEAT" json:"TUN_SPECIFIC_HEAT"`
 	EquipAdjust     bool       `xml:"EQUIP_ADJUST" json:"EQUIP_ADJUST"`
+
+	/* Extensions */
+
+	DisplayGrainTemp  string `xml:"DISPLAY_GRAIN_TEMP" json:"DISPLAY_GRAIN_TEMP"`
+	DisplayTunTemp    string `xml:"DISPLAY_TUN_TEMP" json:"DISPLAY_TUN_TEMP"`
+	DisplaySpargeTemp string `xml:"DISPLAY_SPARGE_TEMP" json:"DISPLAY_SPARGE_TEMP"`
+	DisplayTunWeight  string `xml:"DISPLAY_TUN_WEIGHT" json:"DISPLAY_TUN_WEIGHT"`
 }

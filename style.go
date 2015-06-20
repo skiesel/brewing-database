@@ -24,4 +24,19 @@ type Style struct {
 	Profile        string  `xml:"PROFILE" json:"PROFILE"`
 	Ingredients    string  `xml:"INGREDIENTS" json:"INGREDIENTS"`
 	Examples       string  `xml:"EXAMPLES" json:"EXAMPLES"`
+
+	/* Extensions */
+
+	DisplayOGMin    string `xml:"DISPLAY_OG_MIN" json:"DISPLAY_OG_MIN"`
+	DisplayOGMax    string `xml:"DISPLAY_OG_MAX" json:"DISPLAY_OG_MAX"`
+	DisplayFGMin    string `xml:"DISPLAY_FG_MIN" json:"DISPLAY_FG_MIN"`
+	DisplayFGMax    string `xml:"DISPLAY_FG_MAX" json:"DISPLAY_FG_MAX"`
+	DisplayColorMin string `xml:"DISPLAY_COLOR_MIN" json:"DISPLAY_COLOR_MIN"`
+	DisplayColorMax string `xml:"DISPLAY_COLOR_MAX" json:"DISPLAY_COLOR_MAX"`
+	OGRange         string `xml:"OG_RANGE" json:"OG_RANGE"`
+	FGRange         string `xml:"FG_RANGE" json:"FG_RANGE"`
+	IBURange        string `xml:"IBU_RANGE" json:"IBU_RANGE"`
+	CarbRange       string `xml:"CARB_RANGE" json:"CARB_RANGE"`
+	ColorRange      string `xml:"COLOR_RANGE" json:"COLOR_RANGE"`
+	ABVRange        string `xml:"ABV_RANGE" json:"ABV_RANGE"`
 }

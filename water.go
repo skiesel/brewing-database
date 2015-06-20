@@ -12,4 +12,8 @@ type Water struct {
 	Magnesium   float64 `xml:"MAGNESIUM" json:"MAGNESIUM"`
 	PH          float64 `xml:"PH" json:"PH"`
 	Notes       string  `xml:"NOTES" json:"NOTES"`
+
+	/* Extensions */
+
+	DisplayAmount string `xml:"DISPLAY_AMOUNT" json:"DISPLAY_AMOUNT"`
 }

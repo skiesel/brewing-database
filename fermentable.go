@@ -18,4 +18,11 @@ type Fermentable struct {
 	MaxInBatch     float64 `xml:"MAX_IN_BATCH" json:"MAX_IN_BATCH"`
 	RecommendMash  bool    `xml:"RECOMMEND_MASH" json:"RECOMMEND_MASH"`
 	IBUGalPerLB    string  `xml:"IBU_GAL_PER_LB" json:"IBU_GAL_PER_LB"`
+
+	/* Extensions */
+
+	DisplayAmount string `xml:"DISPLAY_AMOUNT" json:"DISPLAY_AMOUNT"`
+	Potential     string `xml:"POTENTIAL" json:"POTENTIAL"`
+	Inventory     string `xml:"INVENTORY" json:"INVENTORY"`
+	DisplayColor  string `xml:"DISPLAY_COLOR" json:"DISPLAY_COLOR"`
 }

@@ -35,15 +35,15 @@ type WaterList struct {
 }
 
 type EquipmentList struct {
-	Equipmements []Equipment `xml:"EQUIPMENT" json:"EQUIPMENT"`	
+	Equipmements []Equipment `xml:"EQUIPMENT" json:"EQUIPMENT"`
 }
 
 type MashProfileList struct {
-	MashProfiles []MashProfile `xml:"MASH" json:"MASH"`	
+	MashProfiles []MashProfile `xml:"MASH" json:"MASH"`
 }
 
 type StyleList struct {
-	Styles []Style `xml:"STYLE" json:"STYLE"`		
+	Styles []Style `xml:"STYLE" json:"STYLE"`
 }
 
 func parse(beerXML []byte) {

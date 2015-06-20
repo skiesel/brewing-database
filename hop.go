@@ -13,12 +13,15 @@ type Hop struct {
 	Form          string  `xml:"FORM" json:"FORM"`
 	Beta          float64 `xml:"BETA" json:"BETA"`
 	HSI           float64 `xml:"HSI" json:"HSI"`
-	DisplayAmount string  `xml:"DISPLAY_AMOUNT" json:"DISPLAY_AMOUNT"`
-	Inventory     string  `xml:"INVENTORY" json:"INVENTORY"`
-	DisplayTime   string  `xml:"DISPLAY_TIME" json:"DISPLAY_TIME"`
-	Subtitutes    string  `xml:"SUBSTITUTES" json:"SUBSTITUTES"`
+	Substitutes   string  `xml:"SUBSTITUTES" json:"SUBSTITUTES"`
 	Humulene      string  `xml:"HUMULENE" json:"HUMULENE"`
 	Caryophyllene string  `xml:"CARYOPHYLLENE" json:"CARYOPHYLLENE"`
 	Cohumulone    string  `xml:"COHUMULONE" json:"COHUMULONE"`
 	Myrcene       string  `xml:"MYRCENE" json:"MYRCENE"`
+
+	/* Extensions */
+
+	DisplayAmount string `xml:"DISPLAY_AMOUNT" json:"DISPLAY_AMOUNT"`
+	Inventory     string `xml:"INVENTORY" json:"INVENTORY"`
+	DisplayTime   string `xml:"DISPLAY_TIME" json:"DISPLAY_TIME"`
 }

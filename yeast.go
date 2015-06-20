@@ -18,4 +18,12 @@ type Yeast struct {
 	TimesCultured  int64   `xml:"TIMES_CULTURED" json:"TIMES_CULTURED"`
 	MaxReuse       int64   `xml:"MAX_REUSE" json:"MAX_REUSE"`
 	AddToSecondary bool    `xml:"ADD_TO_SECONDARY" json:"ADD_TO_SECONDARY"`
+
+	/* Extensions */
+
+	DisplayAmount string `xml:"DISPLAY_AMOUNT" json:"DISPLAY_AMOUNT"`
+	DispMinTemp   string `xml:"DISP_MIN_TEMP" json:"DISP_MIN_TEMP"`
+	DispMaxTemp   string `xml:"DISP_MAX_TEMP" json:"DISP_MAX_TEMP"`
+	Inventory     string `xml:"INVENTORY" json:"INVENTORY"`
+	CultureDate   string `xml:"CULTURE_DATE" json:"CULTURE_DATE"`
 }

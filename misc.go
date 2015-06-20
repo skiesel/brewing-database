@@ -10,4 +10,10 @@ type Misc struct {
 	AmountIsWeight bool    `xml:"AMOUNT_IS_WEIGHT" json:"AMOUNT_IS_WEIGHT"`
 	UseFor         string  `xml:"USE_FOR" json:"USE_FOR"`
 	Notes          string  `xml:"NOTES" json:"NOTES"`
+
+	/* Extensions */
+
+	DisplayAmount string `xml:"DISPLAY_AMOUNT" json:"DISPLAY_AMOUNT"`
+	Inventory     string `xml:"INVENTORY" json:"INVENTORY"`
+	DisplayTime   string `xml:"DISPLAY_TIME" json:"DISPLAY_TIME"`
 }
