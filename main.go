@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/skiesel/brewing-database/BrewingElements"
+	"github.com/skiesel/brewing-database/MySQL"
 	"io/ioutil"
 )
 
@@ -22,5 +23,8 @@ func test() {
 }
 
 func main() {
+	if database.Connected() {
+		fmt.Println("connected!")
+	}
 	test()
 }
