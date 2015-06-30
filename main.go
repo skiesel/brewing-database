@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"github.com/skiesel/brewing-database/BrewingElements"
-	"github.com/skiesel/brewing-database/MySQL"
+	"github.com/skiesel/brewing-database/FrontEnd"
+	"net/http"
 	"io/ioutil"
 )
 
@@ -23,8 +24,6 @@ func test() {
 }
 
 func main() {
-	if database.Connected() {
-		fmt.Println("connected!")
-	}
-	test()
+	http.HandleFunc("/", frontend.BeerXML)
+	http.ListenAndServe(":8080", nil)
 }

@@ -1,0 +1,18 @@
+<html>
+	<body>
+		{{ range $key, $value := . }}
+			<center><h2>{{ $key }}</h2></center>
+			<table>
+				<tr><th>Field Name</th><th>Description</td><th>Format</th><th>Required</th></tr>
+			{{ range $value := . }}
+				<tr>
+					<td>{{ $value.Field }}</td>
+					<td>{{ $value.Description }}</td>
+					<td>{{ $value.Format }}</td>
+					<td>{{ $value.Required }}</td>
+				</tr>
+			{{ end }}
+			</table>
+		{{ end }}
+	</body>
+</html>

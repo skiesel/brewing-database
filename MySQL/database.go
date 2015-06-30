@@ -31,7 +31,7 @@ func init() {
 		panic(err)
 	}
 
-	dsn := fmt.Sprintf("%s:%s@%s/%s", config.Username, config.Password, config.Server, config.Database)
+	dsn := fmt.Sprintf("%s:%s@tcp(%s)/%s", config.Username, config.Password, config.Server, config.Database)
 
 	db, err = sql.Open("mysql", dsn)
 
@@ -40,8 +40,18 @@ func init() {
 	}
 
 	fmt.Println("connected!")
+
+	// err = db.Ping()
+	// if err != nil {
+	// 	panic(err)
+	// }
 }
 
-func Connected() bool {
-	return db != nil
+func GetBeerXMLRows() *sql.Rows {
+	query := "SELECT ElementType.Type, BeerXMLMetaData.Field, BeerXMLMetaData.Description, BeerXMLMetaData.Format, BeerXMLMetaData.Required FROM BeerXMLMetaData INNER JOIN ElementType ON BeerXMLMetaData.ElementType=ElementType.ID ORDER BY Type"
+	rows, err := db.Query(query)
+	if err != nil {
+		panic(err)
+	}
+	return rows
 }
