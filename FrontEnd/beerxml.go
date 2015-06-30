@@ -8,10 +8,10 @@ import (
 )
 
 type xmlElement struct {
-	Field string
+	Field       string
 	Description string
-	Format string
-	Required bool
+	Format      string
+	Required    bool
 }
 
 var (

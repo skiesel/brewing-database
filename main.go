@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/skiesel/brewing-database/BrewingElements"
 	"github.com/skiesel/brewing-database/FrontEnd"
-	"net/http"
 	"io/ioutil"
+	"net/http"
 )
 
 func test() {
